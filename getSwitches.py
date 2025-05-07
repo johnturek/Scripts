@@ -1,8 +1,15 @@
 import csv
 from catalystcentersdk import CatalystCenter
 
-# Connect to Catalyst Center (credentials are read from environment variables)
-catalyst = CatalystCenter()
+# Import credentials from settings file
+from settings import CATALYST_USERNAME, CATALYST_PASSWORD, CATALYST_BASE_URL
+
+# Connect to Catalyst Center using credentials from settings
+catalyst = CatalystCenter(
+    base_url=CATALYST_BASE_URL,
+    username=CATALYST_USERNAME,
+    password=CATALYST_PASSWORD
+)
 
 # Retrieve all network devices
 devices = catalyst.device.get_all_network_devices().response
