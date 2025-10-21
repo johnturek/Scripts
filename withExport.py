@@ -46,7 +46,7 @@ def connect_to_catalyst() -> CatalystCenter:
         username, password, base_url = load_settings()
         
         if username and password and base_url:
-            logger.info(f"Connecting to Catalyst Center at {base_url}...")
+            logger.info("Connecting to Catalyst Center...")
             catalyst = CatalystCenter(
                 base_url=base_url,
                 username=username,

@@ -48,7 +48,7 @@ def connect_to_catalyst(username: str, password: str, base_url: str) -> Catalyst
         CatalystCenter: Connected Catalyst Center client
     """
     try:
-        logger.info(f"Connecting to Catalyst Center at {base_url}...")
+        logger.info("Connecting to Catalyst Center...")
         catalyst = CatalystCenter(
             base_url=base_url,
             username=username,

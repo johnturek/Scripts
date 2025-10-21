@@ -58,7 +58,7 @@ def connect_to_catalyst(
         SystemExit: If connection fails
     """
     try:
-        logger.info(f"Connecting to Catalyst Center at {base_url}...")
+        logger.info("Connecting to Catalyst Center...")
         catalyst = CatalystCenter(
             base_url=base_url,
             username=username,

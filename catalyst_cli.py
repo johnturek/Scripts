@@ -264,7 +264,7 @@ def handle_test(args):
     
     try:
         username, password, base_url = load_settings()
-        logger.info(f"Testing connection to {base_url}...")
+        logger.info("Testing connection to Catalyst Center...")
         
         catalyst = connect_to_catalyst(username, password, base_url)
         
@@ -274,8 +274,6 @@ def handle_test(args):
         print("\n" + "="*50)
         print("CONNECTION TEST SUCCESSFUL")
         print("="*50)
-        print(f"Base URL: {base_url}")
-        print(f"Username: {username}")
         print(f"Total devices found: {len(devices)}")
         print("="*50 + "\n")
         
@@ -305,8 +303,7 @@ def handle_info(args):
     print("\n" + "="*50)
     print("CATALYST CENTER SUMMARY")
     print("="*50)
-    print(f"Base URL: {base_url}")
-    print(f"\nNetwork Devices:")
+    print(f"Network Devices:")
     print(f"  Total Devices: {len(devices)}")
     print(f"  Switches: {len(switches)}")
     print(f"  Routers: {len(routers)}")
