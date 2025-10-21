@@ -172,3 +172,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Output files from scripts
+cisco_switches.csv
+all_switches_raw.csv
+all_switches_raw.json
+all_sites_raw.csv
+all_sites_raw.json
+all_ip_subnets_raw.csv
+all_ip_subnets_raw.json
+catalyst_export.xlsx
+*.csv
+*.xlsx
