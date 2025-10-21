@@ -1,0 +1,5 @@
+# Cisco Catalyst Center SDK
+catalystcentersdk>=2.6.0
+
+# Optional: Additional export formats
+openpyxl>=3.1.0  # For Excel export support
