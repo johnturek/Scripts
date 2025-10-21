@@ -4,10 +4,22 @@ A collection of Python scripts to export network device information from Cisco C
 
 ## Features
 
+### Core Functionality
 - Export detailed switch information to CSV format
 - Export raw device, site, and IP subnet data for analysis
 - Site information including geolocation data
+- Professional Excel reports with multiple worksheets
 - Configurable authentication and connection settings
+
+### Enhanced Features (v2.0)
+- **Multiple Export Formats**: CSV, JSON, and Excel
+- **Command-Line Interface**: Unified CLI tool for all operations
+- **Error Handling**: Comprehensive error handling and logging
+- **Progress Indicators**: Visual feedback for long-running operations
+- **Data Caching**: Efficient API usage with intelligent caching
+- **Flexible Filtering**: Export specific data types
+- **Setup Validation**: Built-in tool to verify configuration
+- **Extensive Documentation**: Detailed guides and examples
 
 ## Prerequisites
 
@@ -39,6 +51,42 @@ A collection of Python scripts to export network device information from Cisco C
    CATALYST_PASSWORD = "your_password"
    CATALYST_BASE_URL = "https://your-catalyst-center.example.com"
    ```
+
+5. Validate your setup:
+   ```bash
+   python validate_setup.py
+   ```
+
+## Quick Reference
+
+| Script | Purpose | Output |
+|--------|---------|--------|
+| `getSwitches.py` | Export detailed switch info with sites | CSV file |
+| `withExport.py` | Export raw JSON data for all resources | CSV or JSON files |
+| `exportToExcel.py` | Create comprehensive Excel report | Excel workbook |
+| `catalyst_cli.py` | Unified CLI for all operations | Various |
+| `validate_setup.py` | Validate installation and configuration | Console output |
+
+### Quick Start Commands
+
+```bash
+# Validate setup
+python validate_setup.py
+
+# Test connection
+python catalyst_cli.py test
+
+# Export switches
+python getSwitches.py
+
+# Create Excel report
+python exportToExcel.py
+
+# Export raw JSON data
+python withExport.py --format json
+```
+
+For detailed usage instructions, see [USAGE.md](USAGE.md).
 
 ## Usage
 
